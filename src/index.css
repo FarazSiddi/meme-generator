@@ -19,10 +19,13 @@ Default: 1
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -30,4 +33,23 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 36px;
+  color: white;
+}
+
+.top-bar {
+  background-image: linear-gradient(to right, purple, aqua);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12.8rem;
+  padding: 1.2rem 0;
 }
